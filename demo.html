@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Demo</title>
+</head>
+<body>
+<div id='headerDiv' class='header transitionBig'>
+	<table id='mainLabel' class='labelBig'><tr><td>QuoteSqueeze</td></tr></table>	
+	<table class='menuTable'>
+		<tr>
+			<td onclick='showMenu("1");'>Lorem</td>
+			<td onclick='showMenu("2");'>Ipsum</td>
+			<td onclick='showMenu("3");'>Dolor</td>
+			<td onclick='showMenu("4");'>Sit</td>
+		</tr>
+	</table>
+</div>
+
+<div class="jcarousel-wrapper">
+	<div class="jcarousel" data-jcarousel="true">
+	    <ul style="left: 0px; top: 0px;">
+	        <li><img src="1.jpg"></img></li>
+			<li><img src="2.jpg"></img></li>
+			<li><img src="3.jpg"></img></li>
+	    </ul>	
+	</div>
+    <a href="#" class="jcarousel-control-prev inactive" data-jcarouselcontrol="true">‹</a>
+    <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+    <p class="jcarousel-pagination" data-jcarouselpagination="true"><a href="Basic carousel - jCarousel Examples.htm" class="active">&nbsp;dsds</a><a href="#2">&nbsp;</a><a href="#3">&nbsp;</a></p>
+</div>
+<!-- 
+<div class="jcarousel-wrapper">
+<a href="#" class="jcarousel-control-prev inactive" data-jcarouselcontrol="true">Prev</a>
+<p class="jcarousel-pagination" data-jcarouselpagination="true"><a href="#1" class="active">1</a><a href="#2">2</a><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><a href="#6">6</a></p>
+<a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">Next</a>
+<div id='carouselDiv' class='jcarousel'>
+	<ul style="left: 0px; top: 0px;">
+		<li><img src="facebook.png" width="600px" height="600px"></img></li>
+		<li><img src="gplus.png" width="600px" height="600px"></img></li>
+		<li><img src="twitter.png" width="600px" height="600px"></img></li>
+	</ul>
+</div>
+</div> -->
+<div id='div1'>
+	<br/><br/>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<br/>
+		<a href='#' onclick="animateThis('2');">Go to 2nd Page</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#a' onclick="animateThis('3');">Go to 3rd Page</a>
+	<br/>
+	<img src="twitter.png" class='slideDown animatedImg'></img>	
+</div>
+<div id='div2'>
+	<br/><br/>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<br/>
+		<a href='#' onclick="animateThis('1');">Go to 0.5st Page</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#a' onclick="animateThis('3');">Go to 3rd Page</a>
+	<br/>
+	<img src="twitter.png" class='animatedImg'></img>
+</div>
+<div id='div3'>
+	<br/><br/>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<br/>
+		<a href='#' onclick="animateThis('2');">Go to 2nd Page</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#a' onclick="animateThis('1');">Go to 0.5st Page</a>
+	<br/>
+	<img src="twitter.png" class='animatedImg'></img>
+</div>
+</body>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link href="animations.css" rel='stylesheet' type='text/css'/>
+<style>
+html{
+	height:100%;
+	padding:0px;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	font-size:25px;
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+#div1,#div2,#div3{
+	width:100%;
+	height:100%;
+	padding-top:50px;
+	text-align:center;
+}/*
+#carouselDiv,#carouselDiv img{
+	width:100%;
+	height:100%;
+}*/
+#div1{
+	background-color:#FA9461;	
+}
+#div2{
+	background-color:#707070;
+	color:white;
+}
+#div3{
+	background-color:#857FB0;
+	color:white;
+}
+.animatedImg{
+	height:500px;
+	visibility: hidden;
+}
+.header{
+	position:fixed;
+	top:0px;left:0px;
+	width:100%;	
+	-webkit-transition: height 0.5s ease,width 0.5s ease,background-color 0.5s ease,color 0.5s ease,font-size 2s ease;
+	color:white;
+	z-index:105;
+}
+#mainLabel{
+	margin-left:50px;
+	float:left;width:50%;
+	height:100%;
+	-webkit-transition: font-size 2s ease;
+	font-size:35px;
+}
+
+#mainLabel td{	
+	vertical-align:bottom;
+}
+
+.transitionBig{	
+	height:80px;
+	/*font-weight:400;*/
+}
+.transitionSmall{
+	height:40px;
+	background-color:black;		
+}
+/*
+.labelBig{
+		
+}
+.labelSmall{	
+	font-size:25px;
+}*/
+
+.menuTable{
+	float:right;
+	margin-right:50px;
+	height:100%;
+}
+.menuTable td{
+	width:25%;
+	padding-left:10px;padding-right:10px;vertical-align:bottom;		
+}
+.menuTable td:hover{
+	cursor:pointer;
+	background-color:#AAAAAA;
+}
+.jcarousel-wrapper{
+	color:black;
+	height:100%;width:100%;
+	background-color:none;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="jcarousel.basic.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="animatescroll.js"></script>
+<script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="jcarousel.basic.js"></script>
+<script>
+/*$(document).ready(function (){
+	$(function() {
+	    $('.jcarousel').jcarousel({
+	        // Configuration goes here
+	    });
+	});
+});*/
+$(window).scroll(function() {
+	if($(window).scrollTop()>=100){
+		/*$('#header').css('height','40px');
+		$('#header').css('background-color','black');		
+		$('#header1').css('font-size','25px');*/
+		$('#headerDiv').removeClass('transitionBig').addClass('transitionSmall');
+		$('#mainLabel').removeClass('labelBig').addClass('labelSmall').css('font-size','25px');				
+	}else{
+		$('#headerDiv').removeClass('transitionSmall').addClass('transitionBig');
+		$('#mainLabel').removeClass('labelSmall').addClass('labelBig').css('font-size','35px');				
+	}
+	$('#div2 img').each(function(){		
+	var imagePos = $(this).offset().top;	
+	var topOfWindow = $(window).scrollTop();
+		if (imagePos < topOfWindow+300) {
+			$(this).addClass("slideUp");
+		}
+	});
+	$('#div3 img').each(function(){		
+		var imagePos = $(this).offset().top;	
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+300) {
+				$(this).addClass("slideLeft");
+			}
+		});
+});
+function showMenu(id){
+	$('#div'+id).animatescroll();
+}
+</script>
+</html>

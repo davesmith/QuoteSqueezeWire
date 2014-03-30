@@ -336,7 +336,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								</tbody>
 							</table>
 							
-							<a class="button huge shortcode" href="#a" onclick="gotoNext();">Go !</a>
+							<a class="button huge shortcode" href="info.html" onclick="gotoNext();">Go !</a>
 						</div>
 						</form>
 					</div>
@@ -895,7 +895,9 @@ window.onload = function(){
 			alert('Please enter ZIP to get started !!!');
 			return false;
 		}
-		jQuery('#quotesform').attr('action','info.html').submit();
+		return true;
+		//jQuery('#quotesform').attr('action','info.html').submit();
+		//window.location.href('')
 	}
 </script>
 </body>

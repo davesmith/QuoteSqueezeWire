@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QuoteSqueeze</title>
+</head>
+<body style='display: none'>
+
+	<div id='containerDiv'>
+		<div id='headerDiv' class='header transitionBig'>
+			<table id='mainLabel' class='labelBig'>
+				<tr>
+					<td>QuoteSqueeze</td>
+				</tr>
+			</table>
+			<table class='menuTable'>
+				<tr>
+					<td onclick='showMenu("divHome");'>Home</td>
+					<td onclick='showMenu("div1");'>Why QS</td>
+					<td onclick='showMenu("div2");'>Team</td>
+					<td onclick='showMenu("div3");'>FAQs</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="jcarousel-wrapper" id='divHome'>
+			<div class="jcarousel" data-jcarousel="true">
+				<ul style="left: 0px; top: 0px;">
+					<li><img src="../img/1.jpg"></img></li>
+					<li><img src="../img/2.jpg"></img></li>
+					<li><img src="../img/3.jpg"></img></li>
+				</ul>
+			</div>
+			<!-- <a href="#" class="jcarousel-control-prev inactive"
+				data-jcarouselcontrol="true">‹</a> <a href="#"
+				class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+			<p class="jcarousel-pagination" data-jcarouselpagination="true">
+				<a href="Basic carousel - jCarousel Examples.htm" class="active">&nbsp;dsds</a><a
+					href="#2">&nbsp;</a><a href="#3">&nbsp;</a>
+			</p> -->
+		</div>
+		<div id='div1'>
+			<br /> <br /> Lorem ipsum dolor sit amet, consectetur adipisicing
+			elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in voluptate velit esse cillum dolore eu
+			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est
+			laborum. <br /> <a href='#' onclick="animateThis('2');">Go to
+				2nd Page</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#a'
+				onclick="animateThis('3');">Go to 3rd Page</a> <br /> <img
+				src="../img/twitter.png" class='slideDown animatedImg'></img>
+		</div>
+		<div id='div2'>
+			<br /> <br /> Lorem ipsum dolor sit amet, consectetur adipisicing
+			elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in voluptate velit esse cillum dolore eu
+			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est
+			laborum. <br /> <a href='#' onclick="animateThis('1');">Go to
+				1st Page</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#a'
+				onclick="animateThis('3');">Go to 3rd Page</a> <br /> <img
+				src="../img/twitter.png" class='animatedImg'></img>
+		</div>
+		<div id='div3'>
+			<br /> <br /> Lorem ipsum dolor sit amet, consectetur adipisicing
+			elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in voluptate velit esse cillum dolore eu
+			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est
+			laborum. <br /> <a href='#' onclick="animateThis('2');">Go to
+				2nd Page</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#a'
+				onclick="animateThis('1');">Go to 1st Page</a> <br /> <img
+				src="../img/twitter.png" class='animatedImg'></img>
+		</div>
+	</div>
+</body>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
+	rel='stylesheet' type='text/css'>
+<link href="../css/animations.css" rel='stylesheet' type='text/css' />
+<link href="../css/indexcss.css" rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" type="text/css" href="../css/jcarousel.basic.css">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/animatescroll.js"></script>
+<script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="../js/jcarousel.basic.js"></script>
+<script>
+	$('#containerDiv').scroll(
+			function() {
+				if ($('#containerDiv').scrollTop() >= 100) {
+					$('#headerDiv').removeClass('transitionBig').addClass(
+							'transitionSmall');
+					$('#mainLabel').addClass('labelSmall').removeClass(
+							'labelBig');
+				} else {
+					$('#headerDiv').removeClass('transitionSmall').addClass(
+							'transitionBig');
+					$('#mainLabel').addClass('labelBig').removeClass(
+							'labelSmall');
+				}
+
+				$('#div2 img').each(function() {
+					var imagePos = $(this).offset().top;
+					var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow + 300) {
+						$(this).addClass("slideUp");
+					}
+				});
+
+				$('#div3 img').each(function() {
+					var imagePos = $(this).offset().top;
+					var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow + 300) {
+						$(this).addClass("slideLeft");
+					}
+				});
+			});
+
+	function showMenu(id) {
+		$('#' + id).animatescroll({
+			element : '#containerDiv'
+		});
+	}
+	$(document).ready(function() {
+		$('body').show(500);
+	})
+</script>
+</html>

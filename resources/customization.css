@@ -1,0 +1,16 @@
+  #groove-feedback #groove-button, #groove-feedback #gw-footer {
+    background-color: #ff530d;
+  }
+
+  #groove-feedback #groove-button #gw-header, #groove-feedback #gw-footer a {
+    color: #ffffff;
+  }
+
+  #groove-feedback #groove-button #gw-header-content {
+    background-image: url('https://studentloanhero.groovehq.com/widgets/503430ae-48cf-4d68-a3b1-6be91f0c2a07/ticket/arrow_up.png') !important;
+  }
+
+  #groove-feedback.opened #groove-button #gw-header-content {
+    background-image: url('https://studentloanhero.groovehq.com/widgets/503430ae-48cf-4d68-a3b1-6be91f0c2a07/ticket/arrow_down.png') !important;
+  }
+

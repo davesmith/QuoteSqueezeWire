@@ -319,12 +319,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<h2>Homepage</h2>
 					<div class="clear"></div>
 					<div class="innercontent">
-						<h1 style="color: #D43719;font-size:60px; font-family:"Trebuchet MS", Helvetica, sans-serif">
-							Your best deal on Car Insurance <br/> is right down the street
+						<h1 style="color: #000000;">
+							Your best deal on Car Insurance </h1> <br/> <h1 style="color: #000000;"> is right down the street
 						</h1>
 						<!-- <h4 id="home-h3">Easily manage and save money on your Insurance</h4> -->
 						<br/><br/>
-						<form id='quotesform' method="get">
+						<form id='quotesform' method="post">
 						<div style="color: #ff530d;">  							
 							<table style="width:100%;margin-left:auto;margin-right:auto;color:white;margin-bottom:25px;text-align:center">
 								<tbody>
@@ -336,7 +336,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								</tbody>
 							</table>
 							
-							<a class="button huge shortcode" href="info.html" onclick="gotoNext();">Go !</a>
+							<a class="button huge shortcode" href="#a" onclick="gotoNext();">Let's Go !</a>
 						</div>
 						</form>
 					</div>
@@ -895,9 +895,7 @@ window.onload = function(){
 			alert('Please enter ZIP to get started !!!');
 			return false;
 		}
-		return true;
-		//jQuery('#quotesform').attr('action','info.html').submit();
-		//window.location.href('')
+		jQuery('#quotesform').attr('action','info.html').submit();
 	}
 </script>
 </body>

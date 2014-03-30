@@ -3531,6 +3531,9 @@ h4.title-shortcode {
 .section.dark h6, .section.dark h6 a {
 
 	color: #fff;
+	font-weight:bold;
+	font-family:"Arial";
+	font-size:50px;
 
 }
 

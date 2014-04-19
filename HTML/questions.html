@@ -102,8 +102,8 @@ body,p,ul,ol,ul.filter li a,.author p a,.date p a,.widget a,.widget_nav_menu a:h
 					<div class="four columns" id="logo">
 						<a href="./demo.html">QuoteStreet</a>
 					</div>
-					<div class="cell verticalcenter">
-						<div class="eleven columns" id="menu" style='padding-top:12px;'>
+					<!--<div class="cell verticalcenter" style='display:none'>
+						<div class="eleven columns" id="menu" style='padding-top:12px;display:none'>
 							<ul id="menu-main-nav" class="sf-menu sf-js-enabled sf-shadow">
 								<li id="menu-item-83"
 									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a
@@ -116,30 +116,9 @@ body,p,ul,ol,ul.filter li a,.author p a,.date p a,.widget a,.widget_nav_menu a:h
 									href="faq.html">FAQs</a></li>
 							</ul>
 						</div>
-					</div>
+					</div>-->
 				</div>
 				<div class="clear"></div>
-
-				<div class="mobilenavcontainer">
-					<a id="jump" href="https://studentloanhero.com/#mobilenav"
-						class="scroll">Select a Page</a>
-					<div class="clear"></div>
-					<div class="mobilenavigation">
-						<ul id="mobilenav">
-							<li id="back"><a href="https://studentloanhero.com/#top"
-								class="menutop">Hide Navigation</a></li>
-							<li
-								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-124"><a
-								href="https://secure.studentloanhero.com/users/sign_in">Login</a></li>
-							<li
-								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a
-								href="https://studentloanhero.com/slh-payment-plan/">Sign Up</a></li>
-						</ul>
-					</div>
-					<div class="clear"></div>
-				</div>
-				
-				
 				
 				<div id='completion' style='position:fixed;background-color:#2b5b7e;height:100px;bottom:0px;left:0px;width:100%;'>
 					<div id="progressbar"></div>
@@ -362,43 +341,14 @@ body,p,ul,ol,ul.filter li a,.author p a,.date p a,.widget a,.widget_nav_menu a:h
 				<tr style='height:100px;'></tr>
 				<tr id='q11' class='question'>
 					<td><input type='checkbox' onclick='complete()'></td><td>I agree with all the terms and conditions.</td>
-				</tr>
-				<!--
-				<tr id='q11' class='question'>
-					<th>11.</th>
-					<th>How comfortable do you feel in sharing your feelings with others?</th>
-				</tr>
-				<tr id='o11' class='option'>
-					<td></td>
-					<td>
-						<br/>
-						<input type='radio' name='op11' value='1' onchange='selectOption(this);'>&nbsp;Very uncomfortable<br/><br/>
-						<input type='radio' name='op11' value='2' onchange='selectOption(this);'>&nbsp;Uncomfortable <br/><br/>
-						<input type='radio' name='op11' value='3' onchange='selectOption(this);'>&nbsp;Mildly comfortable<br/> <br/>
-						<input type='radio' name='op11' value='4' onchange='selectOption(this);'>&nbsp;Comfortable <br/><br/>
-						<input type='radio' name='op11' value='5' onchange='selectOption(this);'>&nbsp;Very comfortable <br/><br/>
-					</td>
-				</tr>
-				<tr style='height:100px;'></tr>
-				<tr id='q12' class='question'>
-					<th>12.</th>
-					<th>How comfortable do you feel in sharing your feelings with others?</th>
-				</tr>
-				<tr id='o12' class='option'>
-					<td></td>
-					<td>
-						<input type='text' name='op12' onchange='selectOption(this);'/>
-					</td>
-				</tr>
-				-->
+				</tr>				
 				<tr style='height:300px;'></tr>				
 			</table>			
 			</div>					
 		</div>
 	</div>
 
-	<script type="text/javascript">if(window.aiModifyParent) {aiModifyParent();}</script>
-	<!-- <script type="text/javascript" src="../resources/custom.js"></script> -->	
+	<script type="text/javascript">if(window.aiModifyParent) {aiModifyParent();}</script>	
 <style>
 	.progressBarItem{
 		height:25px;
@@ -501,9 +451,8 @@ body,p,ul,ol,ul.filter li a,.author p a,.date p a,.widget a,.widget_nav_menu a:h
 	}
 	function selectQFromId(index){
 		var sel=getValue(index);
-		/*if(index!=0 && (sel=='' || sel==undefined))
-			return false;
-		*/	
+		if(index!=0 && (sel=='' || sel==undefined))
+			return false;		
 		jQuery('#q'+index).css('opacity','0.1');
 		jQuery('#o'+index).css('opacity','0.1');		
 		jQuery('#progress'+index).removeClass('progressBarItemNoSelected');

@@ -153,37 +153,42 @@ body,p,ul,ol,ul.filter li a,.author p a,.date p a,.widget a,.widget_nav_menu a:h
 				<div id='answers'></div>
 			</div>
 			<div style='width:80%;float:left'>			
-			<table>
+			<table>				
+				<tr class='Category'><th colspan='2'>General</th></tr>
 				<tr id='q1' class='question'>
 					<th width="2%;">1.</th>
-					<th width="98%;">How comfortable do you feel in sharing your feelings with others?</th>
+					<th width="98%;">Are you currently insured?</th>
 				</tr>
 				<tr id='o1' class='option'>
 					<td></td>
 					<td>
 						<br/>
-						<input type='radio' name='op1' value='1' onchange='selectOption(this);'>&nbsp;Very uncomfortable<br/><br/>
-						<input type='radio' name='op1' value='2' onchange='selectOption(this);'>&nbsp;Uncomfortable <br/><br/>
-						<input type='radio' name='op1' value='3' onchange='selectOption(this);'>&nbsp;Mildly comfortable<br/> <br/>
-						<input type='radio' name='op1' value='4' onchange='selectOption(this);'>&nbsp;Comfortable <br/><br/>
-						<input type='radio' name='op1' value='5' onchange='selectOption(this);'>&nbsp;Very comfortable <br/><br/>
+						<input type='radio' name='op1' value='Yes' onchange='selectOption(this);'>&nbsp;Yes<br/><br/>
+						<input type='radio' name='op1' value='No' onchange='selectOption(this);'>&nbsp;No<br/><br/>						
 					</td>
 				</tr>
 				<tr style='height:100px;'></tr>
+				<tr class='Category'><th colspan='2'>About Car</th></tr>
 				<tr id='q2' class='question'>
 					<th>2.</th>
-					<th>How comfortable do you feel in sharing your feelings with others?</th>
+					<th>What car do you drive?</th>
 				</tr>
 				<tr id='o2' class='option'>
 					<td></td>
 					<td>
-						<input type='text' name='op2' onchange='selectOption(this);'/>
+						<span style='margin-right:15px;'>Select your car : </span>
+						<select id="carYear" onchange="loadCarMakes();" style='width:80px;'></select>
+						<select id='makeType' onchange="getModels(this);"></select>
+						<select id='modelType' onchange="getTrims(this);"></select>
+						<select id='trimType' onchange="changeTrim(this);"></select>
+						<input type='hidden' id='op2'>
 					</td>
 				</tr>
 				<tr style='height:100px;'></tr>
+				<tr class='Category'><th colspan='2'>Personal Info</th></tr>
 				<tr id='q3' class='question'>
 					<th>3.</th>
-					<th>How comfortable do you feel in sharing your feelings with others?</th>
+					<th>Who are the drivers?</th>
 				</tr>
 				<tr id='o3' class='option'>
 					<td></td>

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QuoteStreet</title>
+<script type="text/javascript">
+
+      WebFontConfig = {
+
+        google: { families: [ 'Open Sans', 'Source Sans Pro' ] }   };
+
+      (function() {
+
+        var wf = document.createElement('script');
+
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+
+        wf.type = 'text/javascript';
+
+        wf.async = 'true';
+
+        var s = document.getElementsByTagName('script')[0];
+
+        s.parentNode.insertBefore(wf, s);
+
+      })();
+
+</script>
+<link href="../resources/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all">
+<link href="../resources/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" id="options-css" href="../resources/custom.css" type="text/css" media="all">
+<link href="../resources/slh.css" rel="stylesheet" type="text/css"
+	media="all">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%7CSource+Sans+Pro">
+<script type="text/javascript" src="../resources/jquery.js"></script>
+<script type="text/javascript" src="../js/animatescroll.js"></script>
+<style type="text/css">
+body {
+	background-color: #ffffff;
+	background-image: none;
+}
+h1,h1 a,h2,h2 a,h3,h3 a,h4,h4 a,h5,h5 a,h6,h6 a,.widget h1 a,.widget h2 a,.widget h3 a,.widget h4 a,.widget h5 a,.widget h6 a,.tabswrap .tabpost a,.more-posts a,ul li a.rsswidget
+	{
+	color: #2e3236;
+}
+.sf-menu li li li li a,.sf-menu li li li a,.sf-menu li li a,.sf-menu li li a:visited,.sf-menu li li li a:visited,.sf-menu li li li li a:visited,.sf-menu a,.sf-menu a:visited
+	{
+	color: #555555;
+}
+.sf-menu ul.sub-menu,.sf-menu li li li li a,.sf-menu li li li a,.sf-menu li li a,.sf-menu li li li li a:visited,.sf-menu li li li a:visited,.sf-menu li li a:visited
+	{
+	background: #ffffff;
+}
+.avatar-info .comment-counter,.categories a:hover,.tagcloud a,.widget .tagcloud a,.single .categories a,.single .sidebar .categories a:hover,.tabswrap ul.tabs li a.active,.tabswrap ul.tabs li a:hover,#footer .tabswrap ul.tabs li a:hover,#footer .tabswrap ul.tabs li a.active,.pagination a.button.share:hover,#commentsubmit #submit,#cancel-comment-reply-link,ul.filter li a.active,.categories a,.widget .categories a,ul.filter li a:hover,.button,a.button,.widget a.button,a.more-link,.widget a.more-link,#footer .button,#footer a.button,#footer a.more-link,.cancel-reply p a,#footer .button:hover,#footer a.button:hover,#footer a.more-link:hover,.ag-pricing-table .featured .ag-pricing-header
+	{
+	background-color: #ff530d;
+	color: #fff;
+}
+p a,a,blockquote,blockquote p,.pagetitle h2,.tabswrap .tabpost a:hover,.articleinner h2 a:hover,span.date a:hover,.highlight,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,.post h2.title a:hover,#wp-calendar tbody td a,.author p a:hover,.date p a:hover,.widget a:hover,.widget.ag_twitter_widget span a,#footer h1 a:hover,#footer h2 a:hover,#footer h3 a:hover,#footer h3 a:hover,#footer h4 a:hover,#footer h5 a:hover,a:hover,#footer a:hover,.blogpost h2 a:hover,.blogpost .smalldetails a:hover
+	{
+	color: #ff530d;
+}
+.recent-project:hover,#footer .recent-project:hover {
+	border-color: #ff530d;
+}
+
+.pagecontent {
+	background-color: #ffffff;
+}
+
+.singlecomment {
+	background: #f3f3f3;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.
+#wp-calendar tbody td {
+	background: #f3f3f3;
+	border: 1px solid #ffffff;
+}
+
+body,p,ul,ol,ul.filter li a,.author p a,.date p a,.widget a,.widget_nav_menu a:hover,.widget_recent_entries a:hover,.sf-menu a,.sf-menu a:visited
+	{
+	color: #333332
+}
+</style>
+<style type="text/css">
+.broken_link,a.broken_link {
+	text-decoration: line-through;
+}
+</style>
+</head>
+
+<body class="home page page-id-1852 page-template page-template-template-home-php chrome">
+	<div class="sitecontainer">
+		<div class="header-container small">
+			<div class="container top-nav verticalcenter">
+				<div class="container_row">
+					<div class="four columns" id="logo">
+						<a href="./demo.html">QuoteStreet</a>
+					</div>
+					<div class="cell verticalcenter">
+						<div class="eleven columns" id="menu" style='padding-top:12px;'>
+							<ul id="menu-main-nav" class="sf-menu sf-js-enabled sf-shadow">
+								<li id="menu-item-83"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a
+									href="why.html">Why QS</a></li>
+								<li id="menu-item-83"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a
+									href="team.html">Team</a></li>
+								<li id="menu-item-83"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a
+									href="faq.html">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+
+				<div class="mobilenavcontainer">
+					<a id="jump" href="https://studentloanhero.com/#mobilenav"
+						class="scroll">Select a Page</a>
+					<div class="clear"></div>
+					<div class="mobilenavigation">
+						<ul id="mobilenav">
+							<li id="back"><a href="https://studentloanhero.com/#top"
+								class="menutop">Hide Navigation</a></li>
+							<li
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-124"><a
+								href="https://secure.studentloanhero.com/users/sign_in">Login</a></li>
+							<li
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a
+								href="https://studentloanhero.com/slh-payment-plan/">Sign Up</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				
+				<div id='completion' style='position:fixed;background-color:#2b5b7e;height:100px;bottom:0px;left:0px;width:100%;'>
+					<div id="progressbar"></div>
+				</div>
+				
+			</div>
+		</div>		
+		<div id='contentContainer'>
+			<div id='answersContainer' style='width:15%;float:left'>
+				&nbsp;
+				<div id='answers'></div>
+			</div>
+			<div style='width:80%;float:left'>
+			<div id='questionCategoryContainer' style='width:100%'>
+				<div class='questionCategory' id='qcat1'>General</div>
+				<div class='questionCategory' id='qcat2'>About Car</div>
+				<div class='questionCategory' id='qcat3'>Personal Info</div>
+				<div class='questionCategory' id='qcat4'>Coverage Options</div>
+			</div>
+			</div>			
+			<table>
+				<tr id='q1' class='question'>
+					<th width="2%;">1.</th>
+					<th width="98%;">Are you currently insured ?</th>
+				</tr>
+				<tr id='o1' class='option'>
+					<td></td>
+					<td>
+						<br/>
+						<input type='radio' name='op1' value='Yes' onchange='selectOption(this);'>&nbsp;Yes &nbsp;&nbsp;&nbsp;&nbsp;
+						<input type='radio' name='op1' value='No' onchange='selectOption(this);'>&nbsp;No<br/><br/>						
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q2' class='question'>
+					<th>2.</th>
+					<th>What car do you drive ?</th>
+				</tr>
+				<tr id='o2' class='option'>
+					<td></td>
+					<td>
+						<div id='addedCarsDiv' style='display:none'>							
+							<table id='addedCars'>																
+								<tr style='opacity:1 !important;'><td style='color:black;'>Added Vehicles<td><td></td></tr>
+							</table>
+						</div>
+						<br/>
+						<select id="carYear" onchange="loadCarMakes();" style='width:80px;'></select>
+						<select id='makeType' onchange="getModels(this);"><option value=''>-Make-<option></select>
+						<select id='modelType' onchange="getTrims(this);"><option value=''>-Model-<option></select>
+						<select id='trimType' onchange="changeTrim(this);"><option value=''>-Trim-<option></select>
+						<div style='width:100%;text-align:center;margin-top:10px;font-size:15px'><span>Or Enter VIN : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="vin" onchange="checkVIN(this);" style='width:150px;'></div>												
+						<div id='carInfo' style='font-size:20px'>
+							<span id='year'></span>&nbsp;<span id='make'></span>&nbsp;<span id='model'></span>&nbsp;<span id='transmissionType'></span>
+							<a style='display:none;font-size:14px;margin-right:20px;' href='#a' onclick='addCars();'>Add vehicle</a>
+						</div>
+						<div style='width:100%;font-size:18px;display:none' class='carsLink'>							
+							<a href='#a' onclick='goToNext("2");'>Next</a>
+						</div>
+						<input type='hidden' name='op2'/>
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q3' class='question'>
+					<th>3.</th>
+					<th>Who are the drivers ?</th>
+				</tr>
+				<tr id='o3' class='option'>
+					<td></td>					
+					<td>
+						<div id='addedDriversDiv' style='display:none'>							
+							<table id='addedDrivers'>																
+								<tr style='opacity:1 !important;'><td style='color:black;'>Added Drivers<td><td></td></tr>
+							</table>
+						</div>
+						<br/>
+						<input type="text" id="driverName" onchange="" maxlength="250" style='width:250px;' placeholder="Name">
+						<input type="text" id="driverDOB" onchange="" maxlength="10" style='width:100px;' placeholder="DoB">
+						<input type="text" id="driverLicence" onchange="" maxlength="25" style='width:200px;' placeholder="Driver's Licence No">
+						<a href='#a' onclick='addDriver();' class='smallLink'>Add Driver</a>
+						<input type='hidden' name='op3'>
+						<br/>
+						<br/>
+						<div style='width:100%;font-size:18px;display:none' class='driverDetailsLink'>							
+							<a href='#a' onclick='completeDriversQues("3");'>Next</a>
+						</div>						
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q4' class='question'>
+					<th>4.</th>
+					<th>What is your Address ?</th>
+				</tr>
+				<tr id='o4' class='option'>
+					<td></td>
+					<td>
+						<br/>
+						<input type='hidden' name='op4'/>
+						<input type='text' name='cellNo' id='cellNo' placeholder="Enter Phone No" style='width:150px'/>
+						<input type='text' name='emailId' id='emailId' placeholder="Enter Email-id" style='width:150px'/>
+						<br/><br/>
+						<div style='width:100%;font-size:18px'>
+							<a href='#a' onclick='completePersonalQues("4");'>Next</a>
+						</div>
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q5' class='question'>
+					<th>5.</th>
+					<th>Select your Coverage Options</th>
+				</tr>
+				<tr id='o5' class='option'>
+					<td></td>
+					<td>
+						<input type='hidden' name='op5'/>
+						<table id='coverageOptionsA'>
+							<tr>
+								<td width="50%">Bodily Injury Liability</td><td width="50%"><input type='checkbox' id='bodilyInc' value='Y'></td>
+							</tr>
+							<tr>
+								<td>Unisured</td><td><input type='checkbox' id='uninsured' name='uninsured' value='Y'></td>
+							</tr>
+							<tr>
+								<td>Underinsured</td><td><input type='checkbox' id='underinsured' name='underinsured' value='Y'></td>
+							</tr>								
+						</table>
+						<br/>
+						<table id='coverageOptionsB'>							
+							<tr>
+								<td colspan='2'>Tort : 
+									<input type='radio' name='tort' value='full'>&nbsp;Full &nbsp;&nbsp;&nbsp;&nbsp;
+									<input type='radio' name='tort' value='limited'>&nbsp;Limited<br/><br/>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%">Collision Deductible</td><td width="50%"><input type='checkbox' id='coldeduct' name='coldeduct' value='Y'></td>
+							</tr>
+							<tr>
+								<td>Comprehensive Deductible</td><td><input type='checkbox' id='comdeduct' name='comdeduct' value='Y'></td>
+							</tr>
+						</table>
+						<br/>
+						<div style='width:100%;font-size:18px;'>
+							<a href='#a' onclick='completeOptionsQues("5");'>Next</a>
+						</div>
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q6' class='question'>
+					<th>6.</th>
+					<th>Are you currently a student ?</th>
+				</tr>
+				<tr id='o6' class='option'>
+					<td></td>
+					<td>
+						<br/>
+						<input type='hidden' name='op6'/>
+						<input type='radio' name='student' value='Yes' onchange='studentSelected(this);'>&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type='radio' name='student' value='No' onchange='studentSelected(this);'>&nbsp;No
+						<br/><br/>
+						<div id='gpa' style='display:none;font-size:18px;'>
+							Is your GPA over 3.0 ? 
+							<br/><br/>
+							<input type='radio' name='gpa' value='Yes' onchange='gpaSelected(this);'>&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type='radio' name='gpa' value='No' onchange='gpaSelected(this);'>&nbsp;No<br/><br/>
+						</div>
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q7' class='question'>
+					<th>7.</th>
+					<th>Are you married ?</th>
+				</tr>
+				<tr id='o7' class='option'>
+					<td></td>
+					<td>
+						<br/>
+						<input type='radio' name='op7' value='Yes' onchange='selectOption(this);'>&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type='radio' name='op7' value='No' onchange='selectOption(this);'>&nbsp;No						
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q8' class='question'>
+					<th>8.</th>
+					<th>Tickets or accidents in the last 3 months ?</th>
+				</tr>
+				<tr id='o8' class='option'>
+					<td></td>
+					<td>
+						<br/>
+						<input type='radio' name='op8' value='Yes' onchange='selectOption(this);'>&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type='radio' name='op8' value='No' onchange='selectOption(this);'>&nbsp;No
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q9' class='question'>
+					<th>9.</th>
+					<th>Do you own a house ?</th>
+				</tr>
+				<tr id='o9' class='option'>
+					<td></td>
+					<td>
+						<br/>						
+						<input type='radio' name='op9' value='Yes' onchange='selectOption(this);'>&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type='radio' name='op9' value='No' onchange='selectOption(this);'>&nbsp;No
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q10' class='question'>
+					<th>10.</th>
+					<th>What is your current premium ?</th>
+				</tr>
+				<tr id='o10' class='option'>
+					<td></td>
+					<td>
+						<br/>
+						<input type='text' name='op10' onchange='selectOption(this);' style='width:200px'/>
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q11' class='question'>
+					<td><input type='checkbox' onclick='complete()'></td><td>I agree with all the terms and conditions.</td>
+				</tr>
+				<!--
+				<tr id='q11' class='question'>
+					<th>11.</th>
+					<th>How comfortable do you feel in sharing your feelings with others?</th>
+				</tr>
+				<tr id='o11' class='option'>
+					<td></td>
+					<td>
+						<br/>
+						<input type='radio' name='op11' value='1' onchange='selectOption(this);'>&nbsp;Very uncomfortable<br/><br/>
+						<input type='radio' name='op11' value='2' onchange='selectOption(this);'>&nbsp;Uncomfortable <br/><br/>
+						<input type='radio' name='op11' value='3' onchange='selectOption(this);'>&nbsp;Mildly comfortable<br/> <br/>
+						<input type='radio' name='op11' value='4' onchange='selectOption(this);'>&nbsp;Comfortable <br/><br/>
+						<input type='radio' name='op11' value='5' onchange='selectOption(this);'>&nbsp;Very comfortable <br/><br/>
+					</td>
+				</tr>
+				<tr style='height:100px;'></tr>
+				<tr id='q12' class='question'>
+					<th>12.</th>
+					<th>How comfortable do you feel in sharing your feelings with others?</th>
+				</tr>
+				<tr id='o12' class='option'>
+					<td></td>
+					<td>
+						<input type='text' name='op12' onchange='selectOption(this);'/>
+					</td>
+				</tr>
+				-->
+				<tr style='height:300px;'></tr>				
+			</table>			
+			</div>					
+		</div>
+	</div>
+
+	<script type="text/javascript">if(window.aiModifyParent) {aiModifyParent();}</script>
+	<!-- <script type="text/javascript" src="../resources/custom.js"></script> -->	
+<style>
+	.progressBarItem{
+		height:25px;
+		background-color:red;
+		float:left;
+		margin-left:4px;
+		-webkit-border-radius:25px;
+		-moz-border-radius:25px;
+		border-radius:25px;
+		text-align:center;
+		font-size:20px;
+		line-height:25px;
+		cursor:pointer;		
+	}
+	#progressbar{
+		width:90%;margin-left:auto;margin-rightr:auto;margin-top:40px;
+	}
+	.progressBarItemNoSelected{
+		background-color:#2b5b7e;
+	}
+	#contentContainer{
+		width:100%;
+		margin:0px;position:absolute;
+		padding-top:100px;padding-bottom:100px;
+		font-size:28px;
+		line-height:32px;
+	}
+	#contentContainer td,#contentContainer tr{
+		padding:10px;
+	}
+	#contentContainer th{
+		font-size:30px;font-weight:bold;
+	}
+	input[type=radio]{
+		margin-left:15px;
+		vertical-align:middle;
+		line-height:100px;
+	}
+	.answer{		
+		color:white;
+		background-color:#2b5b7e;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		border-radius:5px;
+		width:150px;
+		font-size:14px;
+		margin-bottom:2px;
+		padding-left:5px;
+	}
+	#answers{
+		position:fixed;
+	}
+	#addedCarsDiv,#addedCars,#addedDriversDiv,#addedDrivers,#coverageOptionsA,#coverageOptionsB{width:100%;}
+	#addedCars a,#addedDrivers a{
+		font-size:12px;
+	}
+	#addedCars td,#addedDrivers td {
+		font-size:18px;		
+	}
+	.smallLink{
+		font-size:14px;
+	}
+	#coverageOptionsA,#coverageOptionsB{
+		font-size:18px;		
+	}	
+</style>
+<script>
+	var height=jQuery(window).height();
+	var width=jQuery(window).width();
+	var totalQuestions = 10;
+	/* jQuery( "#progressbar" ).progressbar({
+	 	value:0
+	}); */
+	jQuery('.questionCategory').hide();
+	function scrollTo(id){
+		jQuery('#'+id).animatescroll({padding:100});
+	}
+	function createProgressBar(){
+		for(var i=1;i<=totalQuestions;i++){
+			jQuery('#progressbar').append(jQuery('<div>').attr('id','progress'+i).addClass('progressBarItem').html(i).click(function(){
+				selectQFromId(parseInt((jQuery(this).attr('id')).replace('progress',''))-1);
+			}));
+		}
+		jQuery('.progressBarItem').css('width',(((width/totalQuestions)*0.8)-4)+'px').addClass('progressBarItemNoSelected');		
+	}
+	createProgressBar();
+	jQuery('#contentContainer').find('tr').css('opacity','0.1');
+	//jQuery('.question').css('opacity','0.1');
+	jQuery('#q1').css('opacity','1');
+	jQuery('#o1').css('opacity','1');
+	loadYearDropDown();	
+	function selectOption(formObj){		
+		var index = (jQuery(formObj).attr('name')).replace('op','');
+		selectQFromId(index);
+	}
+	
+	function goToNext(){
+		jQuery('input[name=op2]').val(((jQuery('#addedCars').find('tr').length)-1)+' vehicle(s)');
+		selectQFromId(2);
+	}
+	function selectQFromId(index){
+		var sel=getValue(index);
+		/*if(index!=0 && (sel=='' || sel==undefined))
+			return false;
+		*/	
+		jQuery('#q'+index).css('opacity','0.1');
+		jQuery('#o'+index).css('opacity','0.1');		
+		jQuery('#progress'+index).removeClass('progressBarItemNoSelected');
+		addLeft(index,sel);
+		index++;
+		jQuery('#contentContainer').find('tr').css('opacity','0.1');
+		jQuery('.question').css('opacity','0.1');
+		jQuery('#q'+index).find('tr').css('opacity','1');
+		jQuery('#o'+index).find('tr').css('opacity','1');
+		jQuery('#q'+index).css('opacity','1');
+		jQuery('#o'+index).css('opacity','1');
+		scrollTo('q'+index);
+	}
+	function getValue(index){		
+		var $input = jQuery('input[name=op'+index+']'); 
+		if($input.attr('type')=='radio'){
+			return jQuery('input[name=op'+index+']:checked').val(); 
+		}
+		else{
+			return $input.val();
+		}
+	}
+	function addLeft(index,value){
+		if(index==0)
+			return false;
+		var $elem = jQuery('#ans'+index);
+		if($elem.length>0)
+			$elem.html(index+'. '+value);
+		else
+			jQuery('#answers').append(jQuery('<div class="answer" id="ans'+index+'">').html(index+'. '+value));
+	}
+	var apiKey='kejwzykhgap6mjt3b9pgf2ar';
+	var vinurl='http://api.edmunds.com/v1/api/toolsrepository/vindecoder?api_key='+apiKey+'&fmt=json&vin=';
+	var carmakeurl='https://api.edmunds.com/api/vehicle/v2/makes?fmt=json&view=basic&api_key='+apiKey+'&year=';
+	var carmodelurl='https://api.edmunds.com/api/vehicle/v2/$$MAKE$$/models?view=basic&fmt=json&api_key='+apiKey+'&year=';
+	var trimurl = 'https://api.edmunds.com/api/vehicle/v2/$$MAKE$$/$$MODEL$$/$$YEAR$$/styles?view=full&fmt=json&api_key='+apiKey;
+	function checkVIN(formObj){
+		//alert(vinurl+jQuery(formObj).val());
+		jQuery('#carInfo').find('span').html('');
+		jQuery('#callUrl').html(vinurl+jQuery(formObj).val());
+		jQuery.getJSON(vinurl+jQuery(formObj).val(),function (data){
+			//alert(JSON.stringify(data));
+			var carData = data.styleHolder[0];			
+			jQuery('#make').html(carData.makeName);
+			jQuery('#model').html(carData.modelName);			
+			jQuery('#year').html(carData.year);
+			jQuery('#transmissionType').html(carData.transmissionType);
+			jQuery('.carsLink').show();
+			jQuery('#carInfo').find('a').show();
+		}).fail(function() {
+			alert('Please provide valid VIN');
+			jQuery('#carInfo').find('span').html('');
+		  });		
+	}
+	function loadYearDropDown(){
+		jQuery('#carYear').append(jQuery('<option>').val('').html('-Year-'));
+		for(var y=1985;y<=2015;y++){
+			jQuery('#carYear').append(jQuery('<option>').val(y).html(y));
+		}
+	}
+	
+	function loadCarMakes(){
+		jQuery('#carInfo').find('span').html('');
+		jQuery('#makeType').find('option').remove();
+		jQuery('#year').html(jQuery('#carYear').val());
+		var url = carmakeurl+jQuery('#carYear').val();		
+		jQuery('#callUrl').html(url);
+		jQuery.getJSON(url,function (data){			
+			var makeData= data.makes;
+			jQuery('#makeType').append(jQuery('<option>').val('').html('Select'));
+			for(var i=0;i<makeData.length;i++){
+				jQuery('#makeType').append(jQuery('<option>').val(makeData[i].niceName).html(makeData[i].name));
+			}					
+		}).fail(function() {
+			alert('Error');			
+		  });
+	}
+	function getModels(formObj){		
+		jQuery('#make').html(jQuery(formObj).find('option:selected').text());
+		var url = carmodelurl.replace('$$MAKE$$',jQuery(formObj).val())+jQuery('#carYear').val();
+		jQuery('#callUrl').html(url);
+		jQuery.getJSON(url,function (data){
+			var modelData = data.models;
+			jQuery('#modelType').find('option').remove();
+			jQuery('#modelType').append(jQuery('<option>').val('').html('Select'));
+			for(var i=0;i<modelData.length;i++){
+				jQuery('#modelType').append(jQuery('<option>').val(modelData[i].niceName).html(modelData[i].name));
+			}					
+		}).fail(function() {
+			alert('Error');			
+		});
+	}
+	function getTrims(formObj){				
+		jQuery('#trimType').find('option').remove();
+		jQuery('#model').html(jQuery(formObj).find('option:selected').text());
+		var url = trimurl.replace('$$MAKE$$',jQuery('#makeType').val()).replace('$$MODEL$$',jQuery(formObj).val()).replace('$$YEAR$$',jQuery('#carYear').val());
+		jQuery('#callUrl').html(url);
+		jQuery.getJSON(url,function (data){
+			var trimData = data.styles;
+			jQuery('#trimType').append(jQuery('<option>').val('').html('Select'));
+			for(var i=0;i<trimData.length;i++){
+				jQuery('#trimType').append(jQuery('<option>').val(trimData[i].name).html(trimData[i].name));
+			}					
+		}).fail(function() {
+			alert('Error');			
+		});
+	}
+	function changeTrim(formObj){
+		jQuery('#transmissionType').html(jQuery(formObj).find('option:selected').text());
+		jQuery('.carsLink').show();
+		jQuery('#carInfo').find('a').show();
+	}
+	function addCars(){
+		var carString = jQuery('#year').html() +' '+ jQuery('#make').html() +' '+ jQuery('#model').html() +' '+ jQuery('#transmissionType').html();
+		jQuery('#addedCars').append(
+			jQuery('<tr>')
+				.append(jQuery('<td>').html(carString).attr('width','80%'))
+				.append(jQuery('<td>').html('<a href="#a" onclick=removeCar(this)>remove</a><br/>').attr('width','20%')));
+		jQuery('#addedCarsDiv').show();
+		jQuery('#carInfo').find('span').html('');
+		jQuery('#carInfo').find('a').hide();
+	}
+	function removeCar(obj){
+		jQuery(obj).closest('tr').remove();
+		if(jQuery('#addedCars').find('tr').length<=1)
+			jQuery('#addedCarsDiv').hide();
+	}		
+	function addDriver(){
+		var carString = jQuery('#driverName').val() +', '+ jQuery('#driverDOB').val() + ( jQuery('#driverLicence').val()!=''?(' - '+jQuery('#driverLicence').val()):' ');
+		jQuery('#addedDrivers').append(
+			jQuery('<tr>')
+				.append(jQuery('<td>').html(carString).attr('width','80%'))
+				.append(jQuery('<td>').html('<a href="#a" onclick=removeCar(this)>remove</a><br/>').attr('width','20%')));
+		jQuery('#addedDriversDiv').show();
+		jQuery('#driverName').val('');
+		jQuery('#driverDOB').val('');
+		jQuery('#driverLicence').val('');
+		jQuery('.driverDetailsLink').show();
+	}
+	function completeDriversQues(id){
+		jQuery('input[name=op'+id+']').val(((jQuery('#addedDrivers').find('tr').length)-1)+' driver(s)');
+		selectQFromId(id);
+	}
+	function completePersonalQues(id){
+		if(jQuery('#cellNo').val()=='' || jQuery('#emailId').val()==''){
+			alert('Please provide contact details');
+			return false;
+		}
+		jQuery('input[name=op'+id+']').val('Contact details');
+		selectQFromId(id);
+	}
+	function completeOptionsQues(id){
+		jQuery('input[name=op'+id+']').val('Coverage Options');
+		selectQFromId(id);
+	}
+	function studentSelected(obj){
+		var val = jQuery('input[name=student]:checked').val();
+		if(val=='Yes'){
+			jQuery('#gpa').show();
+		}
+		else{
+			jQuery('#gpa').hide();
+			jQuery('input[name=op6]').val('Additional Info');
+			selectQFromId(6);
+		}
+	}
+	function gpaSelected(obj){
+		jQuery('input[name=op6]').val('Additional Info');		
+		selectQFromId(6);
+	}
+	function showTerms(){
+		jQuery('#terms').show();
+	}
+	function complete(){
+		alert('Thank you for providing the information.');
+	}
+</script>
+</body>
+</html>
